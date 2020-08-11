@@ -35,6 +35,10 @@ EOF
 
   chown -R www-data:www-data /var/www
   chmod 400 /var/www/html/conf/conf.php
+
+  if [ -d /var/www/documents/pdf-fonts ]; then
+    cp /var/www/documents/pdf-fonts/* /var/www/html/includes/tecnickcom/tcpdf/fonts/
+  fi
 }
 
 function waitForDataBase()
