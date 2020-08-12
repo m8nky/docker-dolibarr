@@ -19,6 +19,7 @@ ENV WWW_GROUP_ID 33
 
 ENV PHP_INI_DATE_TIMEZONE 'UTC'
 ENV PHP_INI_MEMORY_LIMIT 256M
+ENV PHP_INI_MAX_FILE_SIZE 64M
 
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
